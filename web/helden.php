@@ -13,7 +13,7 @@
     <h3>Navigation</h3>
     <ul>
         <li>Startseite</li>
-        <li><a href="helden.htm">Heldenübersicht</a></li>
+        <li><a href="helden.php">Heldenübersicht</a></li>
     </ul>
 </nav>
 
@@ -21,15 +21,15 @@
     <h1>Supero - Helden</h1>
     <table class="table table-bordered">
         <tr>
-            <td><a href="held_batman.htm">Batman</a></td>
+            <td><a href="held_batman.php">Batman</a></td>
             <td><img src="img/batman.jpg" alt="Batman" class="img-rounded" style="width: 200px"></td>
         </tr>
         <tr>
-            <td><a href="held_robin.htm">Robin</a></td>
+            <td><a href="held_robin.php">Robin</a></td>
             <td><img src="img/robin.jpg" alt="Robin" class="img-rounded" style="width: 200px"></td>
         </tr>
         <tr>
-            <td><a href="held_flash.htm">Flash</a></td>
+            <td><a href="held_flash.php">Flash</a></td>
             <td><img src="img/flash.jpg" alt="Flash" class="img-rounded" style="width: 200px"></td>
         </tr>
         <tr>
