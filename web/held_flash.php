@@ -10,11 +10,7 @@
 <div class="container">
 
 <nav class="col-xs-3">
-    <h3>Navigation</h3>
-    <ul>
-        <li>Startseite</li>
-        <li><a href="helden.php">Heldenübersicht</a></li>
-    </ul>
+    <?php include '_navi.php' ?>
 </nav>
 
 <main class="col-xs-9">
