@@ -24,7 +24,7 @@
              // im Dateisystem besser nur Kleinbuchstaben verwenden
             $file = strtolower($name);
             echo "<tr>";
-            echo "<td><a href='held_$file.php'>$name</a></td>";
+            echo "<td><a href='held.php?name=$name'>$name</a></td>";
             echo "<td><img src='img/$file.jpg' alt='$name' class='img-rounded' style='width: 200px'></td>";
             echo "</tr>";
         } ?>
