@@ -4,7 +4,8 @@
     "type": "project",
     "require": {
         "php": "^7.0",
-        "twig/twig": "^2.0"
+        "twig/twig": "^2.0",
+        "doctrine/orm": "^2.5"
     },
     "autoload": {
         "psr-4": { "Supero\\": "src/" }
