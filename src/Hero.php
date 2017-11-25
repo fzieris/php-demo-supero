@@ -4,10 +4,19 @@
 // sie sind vergleichbar mit Java Packages.
 namespace Supero;
 
+/**
+ * @Entity
+ */
 class Hero {
+    /** @Id @Column(type="integer") @GeneratedValue */
+    private $id;
+    /** @Column(type="string") **/
     private $name;
+    /** @Column(type="string") **/
     private $price;
+    /** @Column(type="string") **/
     private $status;
+    /** @Column(type="string") **/
     private $text;
 
     // Methoden mit __ im Namen sind sog. magische Methoden; sie werden nicht
@@ -34,16 +43,32 @@ class Hero {
         return $this->name;
     }
 
+    public function setName($name) {
+        $this->name = $name;
+    }
+
     public function getPrice() {
         return $this->price;
+    }
+
+    public function setPrice($price) {
+        $this->price = $price;
     }
 
     public function getStatus() {
         return $this->status;
     }
 
+    public function setStatus($status) {
+        $this->status = $status;
+    }
+
     public function getText() {
         return $this->text;
+    }
+
+    public function setText($text) {
+        $this->text = $text;
     }
 
     public static function getAllHeros() {
