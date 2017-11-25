@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Supero - Held {{ name }}</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+
+<nav class="col-xs-3">
+    {{ include('_navi.htm.twig') }}
+</nav>
+
+<main class="col-xs-9">
+    <h1>Held {{ name }}</h1>
+    <div class="row">
+
+    <div class="col-xs-6">
+        <img src="img/{{ name|lower }}.jpg" alt="{{ name }}" class="img-rounded img-responsive">
+    </div>
+    <div class="col-xs-6">
+        <table class="table">
+            <tr><th>Name</th><td>{{ name }}</td></tr>
+            <tr><th>Kosten</th><td>{{ hero.price }}</td></tr>
+            <tr><th>Status</th><td class="{{ statusClass }}">{{ hero.status }}</td></tr>
+            <tr><td colspan="2">{{ hero.text }}</td></tr>
+        </table>
+    </div>
+
+    </div>
+</main>
+
+</div>
+</body>
+</html>

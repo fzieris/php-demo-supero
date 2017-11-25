@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Supero - Helden</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+
+<nav class="col-xs-3">
+    {{ include('_navi.htm.twig') }}
+</nav>
+
+<main class="col-xs-9">
+    <h1>Supero - Helden</h1>
+    <table class="table table-bordered">
+        {% for name in heros %}
+            <tr>
+                <td><a href='held.php?name={{ name }}'>{{ name }}</a></td>
+                <td><img src='img/{{ name|lower }}.jpg' alt='{{ name }}' class='img-rounded' style='width: 200px'></td>
+            </tr>
+        {% endfor %}
+    </table>
+</main>
+
+</div>
+</body>
+</html>
