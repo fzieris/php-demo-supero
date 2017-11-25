@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    {# Block mit Standard-Inhalt #}
+    <title>{% block title %}Supero{% endblock %}</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+
+<nav class="col-xs-3">
+    {{ include('_navi.htm.twig') }}
+</nav>
+
+<main class="col-xs-9">
+    {# Block ohne Standard-Inhalt #}
+    {% block content %}{% endblock %}
+</main>
+
+</div>
+</body>
+</html>

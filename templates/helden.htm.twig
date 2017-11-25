@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="utf-8">
-    <title>Supero - Helden</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-</head>
-<body>
-<div class="container">
+{% extends "base.htm.twig" %}
 
-<nav class="col-xs-3">
-    {{ include('_navi.htm.twig') }}
-</nav>
+{% block title %}
+    {# Zuerst: Aufrufen des Title-Block von base.htm.twig #}
+    {{ parent() }} - Helden
+{% endblock %}
 
-<main class="col-xs-9">
+{% block content %}
     <h1>Supero - Helden</h1>
     <table class="table table-bordered">
         {% for name in heros %}
@@ -23,8 +15,4 @@
             </tr>
         {% endfor %}
     </table>
-</main>
-
-</div>
-</body>
-</html>
+{% endblock %}
