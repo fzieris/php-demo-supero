@@ -1,0 +1,8 @@
+{
+    "name": "supero/website",
+    "description": "New Supero website",
+    "type": "project",
+    "require": {
+        "php": "^7.0"
+    }
+}
