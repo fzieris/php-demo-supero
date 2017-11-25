@@ -70,28 +70,4 @@ class Hero {
     public function setText($text) {
         $this->text = $text;
     }
-
-    public static function getAllHeros() {
-        return array(
-            'Batman' => new Hero("Batman", "100 €/h", "ausgebucht",
-                    "Nachtaktiv und günstig im Doppelpack mit Robin. " .
-                    "Gutes Gehör für hohe Töne, singt im Heldenchor aber im Bass."),
-            'Flash' => new Hero("Flash", "10 €/sec", "fast ausgebucht",
-                    "Ihr Held für eilige Einsätze. " .
-                    "Jetzt neu: Sekundengenaue Abrechnung für Ihren Auftrag."),
-            'Robin' => new Hero("Robin", "50 €/h", "verfügbar",
-                    "Jung und dynamisch. Guter Freund von Batman. " .
-                    "Trägt gerne Strumpfhosen, vor allem im Winter."),
-            'Batgirl' => new Hero("Batgirl"),
-            'Groot' => new Hero("Groot"),
-            'Joker' => new Hero("Joker"),
-            'Supergirl' => new Hero("Supergirl"),
-            'Superman' => new Hero("Superman"),
-            'Thor' => new Hero("Thor"),
-        );
-    }
-
-    public static function getByName($name) {
-        return self::getAllHeros()[$name];
-    }
 }

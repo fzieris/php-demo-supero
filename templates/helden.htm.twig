@@ -8,10 +8,10 @@
 {% block content %}
     <h1>Supero - Helden</h1>
     <table class="table table-bordered">
-        {% for name in heros %}
+        {% for hero in heros %}
             <tr>
-                <td><a href='held.php?name={{ name }}'>{{ name }}</a></td>
-                <td><img src='img/{{ name|lower }}.jpg' alt='{{ name }}' class='img-rounded' style='width: 200px'></td>
+                <td><a href='held.php?name={{ hero.name }}'>{{ hero.name }}</a></td>
+                <td><img src='img/{{ hero.name|lower }}.jpg' alt='{{ hero.name }}' class='img-rounded' style='width: 200px'></td>
             </tr>
         {% endfor %}
     </table>

@@ -7,8 +7,9 @@ require_once '../bootstrap.php';
 $name = filter_input(INPUT_GET, 'name');
 
 // der Backslash trennt den Namespace vom Klassennamen (. in Java)
-// der :: ist für Zugriffe auf statische Methode/Felder (. in Java)
-$hero = Supero\Hero::getByName($name);
+// (die Einrückung der 2. Zeile ist Geschmackssache)
+$hero = $entityManager->getRepository('Supero\Hero')
+                      ->findOneBy(['name' => $name]);
 
 // Bestimmen der CSS-Klasse anhand der Helden-Verfügbarkeit
 $statusClasses = array(
@@ -25,7 +26,6 @@ $class = $statusClasses[$hero->getStatus()];
 // und dabei genau zu bestimmen, welche Variablen verwendet werden sollen
 // (2. Parameter).
 echo $twig->render('held.htm.twig', array(
-    'name' => $name,
     'hero' => $hero,
     'statusClass' => $class,
 ));
