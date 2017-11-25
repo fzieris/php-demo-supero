@@ -3,6 +3,7 @@
     "description": "New Supero website",
     "type": "project",
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "twig/twig": "^2.0"
     }
 }
